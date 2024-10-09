@@ -1,40 +1,51 @@
 .listItem {
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 5px 10px 5px 10px;
-  width: 250px;
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
-.itemName {
+
+.listItem:hover {
+  transform: translateY(-2px);
+}
+
+.personalIfno {
   display: flex;
   align-items: center;
-  gap: 5px;
 }
+
+.itemName,
 .itemPhone {
   display: flex;
   align-items: center;
-  gap: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #343a40;
+  gap: 5px;
 }
-.deleteButton {
-  padding: 0;
-  margin: 0;
-  width: 80px;
-  height: 30px;
-  cursor: pointer;
-}
-.personalInfo {
-  padding: 0;
-  margin: 0;
-}
+
+.iconUser,
 .iconPhone {
-  width: 20px;
-  height: 20px;
+  color: #007bff;
+  font-size: 20px;
+  width: 16px;
 }
-.iconUser {
-  width: 20px;
-  height: 20px;
+
+.deleteButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
 }
